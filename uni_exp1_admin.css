@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1f2933, #111827);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Card */
+.admin-wrapper {
+    background-color: #ffffff;
+    width: 700px;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* Title */
+.admin-wrapper h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1f2933;
+}
+
+/* Mode Button */
+.mode-btn {
+    display: block;
+    margin: 0 auto 25px auto;
+    padding: 10px 22px;
+    border-radius: 8px;
+    border: none;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.mode-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Dashboard Grid */
+.admin-actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+/* Cards */
+.admin-actions button {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    padding: 25px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.admin-actions button:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.4);
+}
+/* Dark Mode */
+body.dark {
+    background: linear-gradient(135deg, #0f172a, #020617);
+}
+
+body.dark .admin-wrapper {
+    background-color: #020617;
+}
+
+body.dark h1 {
+    color: #e5e7eb;
+}
+
+body.dark .admin-actions button {
+    background-color: #020617;
+    color: #e5e7eb;
+    border: 1px solid #334155;
+}
+
+body.dark .admin-actions button:hover {
+    background-color: #2563eb;
+    color: white;
+}

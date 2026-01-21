@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+<link rel="stylesheet" href="uni_exp1_student_form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration Form</h1>
+        <form name="Registration Form" method="get" action="uni_exp1.html" id="f">
+            <label for="fname"> First Name:</label required pattern="[A-Za-z]+" title="First name should contain only letters." required>
+            <input placeholder="Enter Your First Name" type="text" name="fname" id="fname">
+            <br><br>
+             <label for="lname"> Last Name:</label required pattern="[A-Za-z]+" title="Last name should contain only letters." required>
+            <input placeholder="Enter Your Last Name" type="text" name="lname" id="lname">
+            <br><br>
+            <label for="email_e"> Email Id:</label required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address." required>
+            <input placeholder="Enter your Email Id" type="email" name="email_e" id="email_e">
+            <br><br>
+              <label for="age"> Age:</label>
+            <input placeholder=" Age" type="number" name="age" id="age" title="Age should be a number between 16 and 30." min="16" max="30" required>
+            <br><br>
+            <button id="btn" name="Submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

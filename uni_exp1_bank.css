@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Card */
+.bank-container {
+    background-color: #ffffff;
+    width: 360px;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    text-align: center;
+}
+
+.bank-container h1 {
+    color: #203a43;
+    margin-bottom: 20px;
+}
+
+/* Balance Section */
+.balance-box {
+    background-color: #f1f5f9;
+    padding: 18px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.balance-box p {
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.balance-box h2 {
+    color: #2c5364;
+}
+
+/* Input */
+.transaction-box input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.transaction-box input:focus {
+    outline: none;
+    border-color: #2c5364;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+}
+
+.buttons button:first-child {
+    background-color: #16a34a;
+}
+
+.buttons button:first-child:hover {
+    background-color: #15803d;
+}
+
+.buttons button:last-child {
+    background-color: #dc2626;
+}
+
+.buttons button:last-child:hover {
+    background-color: #b91c1c;
+}
+
+/* Message */
+#message {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #333;
+}
