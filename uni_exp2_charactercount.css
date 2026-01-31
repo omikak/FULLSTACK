@@ -1,0 +1,78 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page Body */
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #dbeafe, #f0f9ff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 20px;
+    color: #1e293b;
+    font-size: 2.2rem;
+}
+
+/* Container */
+.container {
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 14px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    outline: none;
+    resize: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Focus Effect */
+textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* Character Count */
+p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #334155;
+    text-align: right;
+}
+
+/* Count Number */
+#charCount {
+    font-weight: bold;
+    color: #2563eb;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    textarea {
+        height: 120px;
+    }
+}

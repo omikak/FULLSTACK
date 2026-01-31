@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG Drawing Tool</title>
+
+    <link rel="stylesheet" href="uni_exp2_svg.css">
+</head>
+<body>
+
+<h2>SVG Drawing Tool</h2>
+
+<!-- Toolbar -->
+<div class="toolbar">
+    <label>Shape:</label>
+    <select id="shape">
+        <option value="freehand">Freehand</option>
+        <option value="rect">Rectangle</option>
+        <option value="circle">Circle</option>
+    </select>
+
+    <label>Color:</label>
+    <input type="color" id="color" value="#000000">
+
+    <button onclick="undo()">Undo</button>
+</div>
+
+<!-- SVG Canvas -->
+<svg id="svgCanvas"></svg>
+
+<script src="uni_exp2_svg.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: linear-gradient(135deg, #e0e7ff, #f8fafc);
+    min-height: 100vh;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: #1f2937;
+    letter-spacing: 0.5px;
+}
+
+/* Toolbar */
+.toolbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 14px 18px;
+    margin: 0 auto 15px;
+    width: 90%;
+    max-width: 900px;
+    background: #111827;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    color: #f9fafb;
+}
+
+/* Toolbar Inputs */
+.toolbar select,
+.toolbar input,
+.toolbar button {
+    padding: 8px 14px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+/* Select & Color */
+.toolbar select,
+.toolbar input {
+    background: #f9fafb;
+    cursor: pointer;
+}
+
+/* Button */
+.toolbar button {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Button Hover */
+.toolbar button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.4);
+}
+
+/* SVG Canvas */
+svg {
+    width: 92vw;
+    height: 75vh;
+    display: block;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 16px;
+    border: 2px dashed #94a3b8;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+    cursor: crosshair;
+}
+
+/* Canvas Hover */
+svg:hover {
+    border-color: #3b82f6;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .toolbar {
+        gap: 8px;
+        padding: 12px;
+    }
+
+    svg {
+        height: 65vh;
+    }
+}
